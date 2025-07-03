@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.task-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.task-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.task-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для списка задач */
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 30px 8px rgba(164, 137, 133, 0.1);
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.task-item label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-item input[type="checkbox"] {
+    accent-color: #007bff;
+    width: 1rem;
+    height: 1rem;
+}
+
+.task-item span.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-card .subtasks {
+    margin-left: 5px;
+    padding: 5px;
+    border-width: 0;
+    border-left-width: 1px;
+    border-color: #e5e7eb;
+    border-style: solid;
+}
+
+.task-card .subtasks input[type="checkbox"] {
+    accent-color: #007bff;
+    width: 1rem;
+    height: 1rem;
+}
+
+.task-card .subtasks li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.task-card .subtasks li:last-child {
+    margin-bottom: 0;
+}
+
+.task-card .subtasks li label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.task-card .subtasks li span.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.add-subtask {
+    color: #007bff;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.add-subtask:hover {
+    text-decoration: underline;
+}
